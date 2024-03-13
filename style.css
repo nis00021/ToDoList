@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: bisque;
+  padding: 10px;
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 540px;
+  background-color: rgb(193, 136, 87);
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 30px;
+  border-style: solid;
+}
+
+.todo-app h2 {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 10px;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 16px 25px;
+  background-color: rgb(203, 177, 121);
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+ul li {
+  list-style: none;
+  font-size: 22px;
+  padding: 16px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(images/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+
+ul li.valittu {
+  color: rgb(109, 103, 103);
+  text-decoration: line-through;
+}
+
+ul li.valittu::before {
+  background-image: url(images/checked.png);
+}
+
+ul li span {
+  position: absolute;
+  right: 1px;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  color: #5f0b0b;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  border-style: dotted;
+  border-width: 1px;
+  border-color: black;
+}
+
+ul li span:hover {
+  background-color: #e0975c;
+}
