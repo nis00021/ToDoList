@@ -3,7 +3,7 @@ const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
 const laskuri = document.getElementById("laskuri");
 
-/* Lisätään syöttökentälle toiminnallisuus */
+/* Lisätään syöttökentälle toiminnallisuus, tarkistus sekä varoitukset */
 function addTask() {
   if (inputBox.value === "") {
     alert("Sinun täytyy kirjoittaa jokin tehtävä!");
