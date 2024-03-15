@@ -4,27 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-Do Lista</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" /> // Linkitetään tyylitiedosto
   </head>
   <body>
     <form>
-      <div class="container">
-        <div class="todo-app">
+      <div class="container"> // Luodaan container sovellukselle
+        <div class="todo-app"> // Luodaan itse sovellus
           <h2>To-Do Lista</h2>
-          <div class="row">
-            <input type="text" id="input-box" placeholder="Lisää tehtävä" />
-            <button onclick="addTask()">Lisää</button>
+          <div class="row"> // Luodaan tekstinsyöttö alue 
+            <input type="text" id="input-box" placeholder="Lisää tehtävä" /> // Tehtävien syöttöruutu
+            <button onclick="addTask()">Lisää</button> //"Lisää" nappula
           </div>
-          <ul id="list-container"></ul>
-          <!--<li class="valittu">Tehtävä 1</li> -->
-          
-       
-          
-    </div>
-        <div id="laskuri" style="text-align: center;"></div> 
+          <ul id="list-container"></ul> //Tehtävälistaus
+          <!--<li class="valittu">Tehtävä 1</li> --> // Luotiin listan tehtäville oma luokka
         </div>
-    </div>
+        <div id="laskuri"> // Sovelluksen alla oleva tehtävälaskuri
+        </div> 
+      </div>
     </form>
-    <script src="script.js"></script>
-  </body>
+<script src="script.js"></script> // Linkitetään JavaScriptin sisältävä tiedosto
+</body>
 </html>

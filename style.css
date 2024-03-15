@@ -1,3 +1,4 @@
+/* Sivun yleismuotoilu*/
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +6,7 @@
   box-sizing: border-box;
 }
 
+/* Lista-alueen muotoilu */
 .container {
   width: 100%;
   min-height: 100vh;
@@ -12,6 +14,7 @@
   padding: 10px;
 }
 
+/* Sovelluksen muotoilu */
 .todo-app {
   width: 100%;
   max-width: 540px;
@@ -22,6 +25,7 @@
   border-style: solid;
 }
 
+/* Sovelluksen otsikon muotoilu */
 .todo-app h2 {
   color: rgb(0, 0, 0);
   font-size: 30px;
@@ -30,6 +34,7 @@
   margin-bottom: 20px;
 }
 
+/* Tehtävän syöttöalueen muotoilu */
 .row {
   display: flex;
   align-items: center;
@@ -42,6 +47,7 @@
   border-width: 1px;
 }
 
+/* Tekstinsyöttöruudun muotoilu */
 input {
   flex: 1;
   border: none;
@@ -51,6 +57,7 @@ input {
   font-size: 18px;
 }
 
+/* "Lisää" nappulan muotoilu */
 button {
   border: none;
   outline: none;
@@ -64,6 +71,7 @@ button {
   border-width: 1px;
 }
 
+/* Tehtävälistan kohteiden muotoilu */
 ul li {
   list-style: none;
   font-size: 22px;
@@ -73,6 +81,7 @@ ul li {
   position: relative;
 }
 
+/* Lisätään suorittamattomille tehtäville kuva */
 ul li::before {
   content: "";
   position: absolute;
@@ -86,15 +95,18 @@ ul li::before {
   left: 8px;
 }
 
+/* Lisätään suoritetuille tehtäville yliviivaus */
 ul li.valittu {
   color: rgb(109, 103, 103);
   text-decoration: line-through;
 }
 
+/* Lisätään suoritetuille tehtäville kuva */
 ul li.valittu::before {
   background-image: url(images/checked.png);
 }
 
+/* Tehtävien poistoruksin muotoilu */
 ul li span {
   position: absolute;
   right: 1px;
@@ -111,11 +123,12 @@ ul li span {
   border-color: black;
 }
 
+/* Lisätään hover toiminnon muotoilut poistoruksille */
 ul li span:hover {
   background-color: #e0975c;
 }
 
-laskuri {
-    display: flex;
-    text-align: center;
+/* Laskurin muotoilut */
+#laskuri {
+  text-align: center;
 }
